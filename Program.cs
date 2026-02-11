@@ -16,5 +16,11 @@ class Program
         // 3. Probamos una cantidad que exceda el límite (Entrada de datos 2)
         Console.WriteLine("--- Test 2: Large Amount ---");
         myProcessor.ProcessPayment(1500.00);
+
+        // 1. Instanciar (crear el objeto)
+        BmiCalculator myCalculator = new BmiCalculator();
+
+         // 2. Llamar al método para ejecutar la lógica
+        myCalculator.Run();
     }
 }

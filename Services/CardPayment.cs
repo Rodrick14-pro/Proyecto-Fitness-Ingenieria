@@ -1,16 +1,19 @@
+namespace ProfessionalPayments.Services;
+// Agregamos esta línea para "importar" la carpeta Models
+using ProfessionalPayments.Models;
 public class CardPayment : IPaymentProcessor
 {
-   public void ProcessPayment(double amount)
+    public void ProcessPayment(double amount)
     {
         // Entrada: amount (el monto que recibimos)
-        
+
         // Proceso: Algoritmo de decisión
-        if (amount > 1000) 
+        if (amount > 1000)
         {
             // Salida si la condición es verdadera
             System.Console.WriteLine("Payment Rejected: Amount exceeds daily limit.");
         }
-        else 
+        else
         {
             // Salida si la condición es falsa
             System.Console.WriteLine("Processing card payment of: $" + amount);

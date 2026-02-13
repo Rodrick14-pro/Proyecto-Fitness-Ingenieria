@@ -1,4 +1,6 @@
 ﻿using System;
+using ProfessionalPayments.Models;   // Para encontrar la interfaz
+using ProfessionalPayments.Services; // Para encontrar CardPayment y BmiCalculator
 
 class Program
 {

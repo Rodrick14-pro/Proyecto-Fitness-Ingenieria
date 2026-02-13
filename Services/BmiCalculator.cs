@@ -1,4 +1,6 @@
+
 using System;
+namespace ProfessionalPayments.Services;
 
 public class BmiCalculator
 {
@@ -8,10 +10,10 @@ public class BmiCalculator
 
         // 1. Entrada de datos (Input)
         Console.Write("Enter your weight (kg): ");
-        double weight = double.Parse(Console.ReadLine());
+        double weight = double.Parse(Console.ReadLine() ?? "0");
 
         Console.Write("Enter your height (m): ");
-        double height = double.Parse(Console.ReadLine());
+        double height = double.Parse(Console.ReadLine() ?? "0");
 
         // 2. Proceso (Lógica de Joyanes)
         double bmi = weight / (height * height);

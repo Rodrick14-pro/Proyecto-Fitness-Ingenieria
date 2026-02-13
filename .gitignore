@@ -1,0 +1,8 @@
+# Carpetas de salida de compilación
+[Bb]in/
+[Oo]bj/
+
+# Archivos de configuración de editores
+.vscode/
+.vs/
+*.user

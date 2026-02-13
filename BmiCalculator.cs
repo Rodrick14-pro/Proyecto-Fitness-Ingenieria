@@ -35,9 +35,9 @@ public class BmiCalculator
         {
             Console.Write("Classification: Normal");
         }
-        else if (bmi >= 30)
+        else 
         {
-            Console.Write("Classification: Overweight");
+            Console.Write("Classification: FAKING OBESO");
         }
 
     }

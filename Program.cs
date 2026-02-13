@@ -17,6 +17,10 @@ class Program
         Console.WriteLine("--- Test 2: Large Amount ---");
         myProcessor.ProcessPayment(1500.00);
 
+        //SEGUNDO PROGRAMA
+
+        Console.WriteLine(); // Espacio en blanco
+
         // 1. Instanciar (crear el objeto)
         BmiCalculator myCalculator = new BmiCalculator();
 

@@ -20,8 +20,18 @@ public class BmiHistoryService
         {
             return File.ReadAllText(FileName);
         }
-        
+
         // 2. Si no existe, devolvemos un mensaje amigable
         return "No history found yet. Start by calculating your BMI! 🚀";
+    }
+
+    public string ClearHistory()
+    {
+        if (File.Exists(FileName))
+        {
+            File.Delete(FileName);
+            return "🗑️  History cleared successfully!";
+        }
+        return "⚠️  No history file found to delete.";
     }
 }

@@ -62,20 +62,34 @@ class Program
                     double w;
                     Console.Write("Enter weight (kg): ");
 
+                    string inputW = Console.ReadLine() ?? "";
+                    inputW = inputW.Replace(',', '.');  //"Limpiamos" la entrada: cambiamos comas por puntos
+
                     // Mientras el TryParse sea FALSO (usamos el símbolo ! para negar), repetimos
-                    while (!double.TryParse(Console.ReadLine(), out w) || w <= 0)
+                    while (!double.TryParse(inputW, CultureInfo.InvariantCulture, out w) || w <= 0)
                     {
                         Console.WriteLine("❌ Input must be a positive number.");
                         Console.Write("Enter weight (kg): ");
+
+                        inputW = Console.ReadLine() ?? "";
+                        inputW = inputW.Replace(',', '.');
+                        
                     }
 
                     double h;
                     Console.Write("Enter height (m): ");
+                    
+                    string inputH = Console.ReadLine() ?? "";
+                    inputH = inputH.Replace(',', '.');  //"Limpiamos" la entrada: cambiamos comas por puntos
 
-                    while(!double.TryParse(Console.ReadLine(), out h) ||  h <= 0)
+                    while(!double.TryParse(inputH, out h) ||  h <= 0)
                     {
                         Console.WriteLine("❌ Input must be a positive number.");     
-                        Console.Write("Enter height (m): ");   
+                        Console.Write("Enter height (m): ");
+
+                        inputH = Console.ReadLine() ?? "";
+                        inputH = inputH.Replace(',', '.');
+
                     }
 
                     // 2. Llamar al método para ejecutar la lógica
@@ -115,6 +129,16 @@ class Program
                 string history = historyService.GetHistory();
                 Console.WriteLine(history);
                 
+                
+                Console.WriteLine("\nDo you want to delete the history? S/N");
+                string delete = Console.ReadLine()?.ToLower() ?? "";
+
+                if(delete == "s")
+                    {
+                        string mensaje = historyService.ClearHistory();
+                        Console.WriteLine(mensaje); // ¡Ahora sí lo vemos!
+                    }
+
                 Console.WriteLine("\nPress Enter to return to menu...");
                 Console.ReadLine();
                 break;

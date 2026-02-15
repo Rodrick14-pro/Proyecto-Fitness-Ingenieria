@@ -1,7 +1,10 @@
-[14/02/2026 18:15] BMI: 24.92 - Classification: Overweight ⚠️
-[14/02/2026 19:07] BMI: 20.76 - Classification: Normal weight ✅
-[14/02/2026 19:07] BMI: 18.75 - Classification: Normal weight ✅
-[14/02/2026 19:31] BMI: 27.34 - Classification: Overweight ⚠️
-[14/02/2026 19:33] BMI: 19.82 - Classification: Normal weight ✅
-[14/02/2026 19:33] BMI: 17.09 - Classification: Underweight 🦴
-[14/02/2026 19:34] BMI: 27.04 - Classification: Overweight ⚠️
+[14/02/2026 20:57] BMI: 22.16 - Classification: Normal weight ✅
+[14/02/2026 20:57] BMI: 194.46 - Classification: Overweight ⚠️
+[14/02/2026 20:58] BMI: 0.00 - Classification: Underweight 🦴
+[14/02/2026 20:58] BMI: 0.00 - Classification: Underweight 🦴
+[14/02/2026 20:58] BMI: 14.80 - Classification: Underweight 🦴
+[14/02/2026 21:02] BMI: 195.70 - Classification: Overweight ⚠️
+[14/02/2026 21:07] BMI: 13.96 - Classification: Underweight 🦴
+[14/02/2026 21:07] BMI: 19.57 - Classification: Normal weight ✅
+[14/02/2026 21:11] BMI: 0.00 - Classification: Underweight 🦴
+[14/02/2026 21:12] BMI: 24.72 - Classification: Normal weight ✅

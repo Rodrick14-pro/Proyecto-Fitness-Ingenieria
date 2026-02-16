@@ -12,6 +12,7 @@ public class BmiCalculator
 
     public string GetClassification(double bmi)
     {
+        if(bmi < 14) return "BRO?? 💀💀💀🥀🥀🥀";
         if(bmi < 18.5) return "Underweight 🦴";
         if (bmi <= 24.9) return "Normal weight ✅";
         return "Overweight ⚠️";

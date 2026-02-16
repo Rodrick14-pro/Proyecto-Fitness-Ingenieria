@@ -11,6 +11,7 @@ class Program
         bool showMenu = true;
 
         BmiHistoryService historyService = new BmiHistoryService();
+        InventoryService inventoryService = new InventoryService();
 
         while (showMenu)
         {
@@ -20,6 +21,7 @@ class Program
             Console.WriteLine("2. BMI Calculator");
             Console.WriteLine("3. View History");
             Console.WriteLine("4. Exit");
+            Console.WriteLine("5. View Inventory & Analysis");
             Console.Write("\nSelect an option: ");
 
             switch (Console.ReadLine())
@@ -145,6 +147,18 @@ class Program
                 
                 case "4":
                 showMenu = false;
+                break;
+
+                case "5":
+                Console.Clear();
+                // 1. Mostramos todos los productos
+                inventoryService.ShowCatalog();
+    
+                // 2. Ejecutamos el algoritmo de análisis que ya escribiste
+                inventoryService.ShowMostProfitableProduct();
+    
+                Console.WriteLine("\nPresiona Enter para volver...");
+                Console.ReadLine();
                 break;
 
                 default:
